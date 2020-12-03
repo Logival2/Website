@@ -1,0 +1,366 @@
+/* ----------- FONT ----------- */
+
+@font-face {font-family:Theinhardt-regular;
+    src: url(fonts/theinhardt/Theinhardt-Regular.otf);}
+@font-face {font-family:theinhardt-italic;
+    src: url(fonts/theinhardt/Theinhardt-RegularItalic.otf);}
+@font-face {font-family:theinhardt-lightitalic;
+    src: url(fonts/theinhardt/Theinhardt-LightItalic.otf);}
+@font-face {font-family:theinhardt-light;
+    src: url(fonts/theinhardt/Theinhardt-Light.otf);}
+
+/* ----------- GENERAL ----------- */
+
+* {
+  box-sizing: border-box;
+  line-height: 120%;
+  font-weight: normal;
+  color: white;
+
+  /*border: 0.2px solid red; */
+
+}
+
+body {
+  background-color: #0c0c0c;
+  font-family: 'theinhardt-regular';
+  margin: 0px 18px 0px 18px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+
+}
+
+a:hover {
+  color:#36F98C;
+  text-decoration:none;
+
+}
+
+/* ----------- FLECHE & LOGO & & wallaper RESIZE  ----------- */
+
+.fleche2 {
+width:11px;
+height:11px;
+}
+.fleche1 {
+width:23px;
+height:23px;
+}
+
+.logo{
+  width:30px;
+  height:auto;
+  float: left;
+
+}
+
+.fond{
+  float: left;
+  max-width: 700px;
+  max-height: auto;
+}
+
+
+/* -------------- TEXT ----------------- */
+
+h1, h2{
+
+  margin: 0px;
+  color: white;
+  font-size: 20px;
+}
+
+
+i {
+  color: #929292;
+}
+
+
+h2.intro_text{
+  color: #929292;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-width: 1800px;
+}
+
+h3{
+  margin: 5px 0px;
+  font-size: 12px;
+  color: #929292;
+
+}
+
+
+.parcours {
+  color: white;
+  font-size: 9px;
+  line-height: 140%;
+}
+
+.vert
+{
+  color: #36F98C;
+}
+
+.grey
+{
+  color: #929292;
+}
+
+figure{
+  margin-left: 0px;
+}
+
+/* -------------- MISE EN FORME ----------------- */
+/* ------------------ HEADER ----------- */
+
+header{
+  background-color: #0c0c0c;
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  top: 0px;
+  margin-bottom: 8px;
+  z-index: 98;
+  border-bottom: 1px solid #FFFF;
+}
+
+.top_links:hover {
+  color: #36F98C;
+}
+
+.header_left {
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+
+.header_right {
+  margin-left: 53px;
+  margin-top: 13px;
+  text-align: right;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  word-spacing: 15px;
+}
+
+
+.title_container {
+  width: 100%;
+  top: 0;
+  margin-top: 15px;
+}
+
+/* ------------------ IMAGE----------- */
+.project_video {
+  max-width: 1365px;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+
+}
+
+img {
+  max-width: 1365px;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+
+.multi_images{
+  max-width: 1365px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* ----------- GRILLE SMARTHPHONE----------- */
+
+.wrapper{
+  margin-top: 10px;
+  display: grid;
+}
+
+.wrapper_header{
+  display: grid;
+  grid-template-columns:3fr 2fr;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* ----------- RESPONSIVE VIDEO----------- */
+
+.container {
+
+  margin-bottom: 15px;
+  max-width: 1365px;
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+}
+
+
+.bg_video {
+  position: absolute;
+  top: 63px;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -100;
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-*/
+/* ----------- TEXT----------- */
+
+@media only screen and (min-width: 1220px) {
+
+
+h1, h2 {
+    font-size: 30px;
+    color: white;
+    font-size: 30px;
+}
+
+h3{
+    margin: 5px;
+    color: #929292;
+    font-size: 16px;
+}
+
+
+
+
+.parcours {
+  font-size: 16px;
+  line-height: 160%;
+  margin-left: 0px;
+}
+
+
+
+.title_container {
+
+    height: 140px;
+    /* FLOAT*/
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 120px;
+
+}
+
+
+/* ----------- HEADER PC -----------*/
+
+.header_right {
+    text-align: left;
+    margin-left: 0px;
+    word-spacing: 20px;
+
+}
+
+.top_links_right {
+    float: right;
+}
+
+
+/* ----------- GRILLE -----------*/
+
+
+.wrapper_header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 0px;
+    font-size: 30px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/* ----------- GRILLE PARTIE PROJET-----------*/
+
+.title_projet_container {
+
+    max-width:30%;
+    height: auto;
+    /* FLOAT*/
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 95px;
+    float : left;
+    /* border: 1px solid yellow; */
+  }
+
+.wrapper_projet{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 33.2%;
+    border: 0px solid red;
+    margin-top: 31px;
+    grid-column-gap: 15px;
+    grid-row-gap: 6px;
+
+  }
+
+  .wrapper_projet_one{
+
+      margin-left: 33.2%;
+      margin-top: 31px;
+      max-width: 100%
+    }
+
+
+  /* ----------- FLECHE ----------- */
+
+.fleche1 {
+    width:32px;
+    height:32px;
+}
+
+.fleche2 {
+    width:17px;
+    height:17px;
+}
+
+/* ----------- INFO ----------- */
+
+.info_container{
+  text-align: right;
+  position: absolute;
+  bottom: 8px;
+  right: 18px;
+}
+
+.logo {
+width:50px;
+float: right;
+}
+
+}
