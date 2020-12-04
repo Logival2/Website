@@ -31,8 +31,8 @@ a{
     text-decoration: none;
     color: white;
     font-weight: normal;
-}
 
+}
 
 a:hover {
   color:#36F98C;
@@ -219,6 +219,8 @@ img {
 }
 
 
+/* ----------- VIDEO WALLAPER CONTACT--------- */
+
 .bg_video {
   position: absolute;
   top: 63px;
@@ -227,7 +229,6 @@ img {
   min-width: 100%;
   z-index: -100;
 }
-
 
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-*/
 /* ----------- TEXT----------- */
@@ -362,5 +363,11 @@ h3{
 width:50px;
 float: right;
 }
+
+
+
+/* ----------- VIDEO ----------- */
+
+
 
 }
