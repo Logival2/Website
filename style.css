@@ -9,6 +9,10 @@
 @font-face {font-family:theinhardt-light;
     src: url(fonts/theinhardt/Theinhardt-Light.otf);}
 
+/* ----------- CURSOR ----------- */
+
+
+
 /* ----------- GENERAL ----------- */
 
 * {
@@ -25,12 +29,17 @@ body {
   background-color: #0c0c0c;
   font-family: 'theinhardt-regular';
   margin: 0px 18px 0px 18px;
+  cursor: url("images/cursor.png"), default;
+
 }
+
+
 
 a{
     text-decoration: none;
     color: white;
     font-weight: normal;
+    cursor: url("images/cursor_green2.png"), pointer;
 
 }
 
@@ -39,6 +48,10 @@ a:hover {
   text-decoration:none;
 
 }
+
+/* ----------- CURSOR FUN  ----------- */
+
+
 
 /* ----------- FLECHE & LOGO & & wallaper RESIZE  ----------- */
 
@@ -89,7 +102,7 @@ h2.intro_text{
 
 h3{
   margin: 5px 0px;
-  font-size: 12px;
+  font-size: 15px;
   color: #929292;
 
 }
@@ -97,7 +110,7 @@ h3{
 
 .parcours {
   color: white;
-  font-size: 9px;
+  font-size: 11px;
   line-height: 140%;
 }
 
@@ -233,7 +246,9 @@ img {
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx PC xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-*/
 /* ----------- TEXT----------- */
 
-@media only screen and (min-width: 1220px) {
+
+
+@media only screen and (min-width: 1000px) {
 
 
 h1, h2 {
